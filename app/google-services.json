@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "392079781871",
+    "firebase_url": "https://web-sayura-app-default-rtdb.firebaseio.com",
+    "project_id": "web-sayura-app",
+    "storage_bucket": "web-sayura-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392079781871:android:0449403b5306bc18c0d01a",
+        "android_client_info": {
+          "package_name": "com.websayuraapp.websayura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392079781871-iar2unm6tbs1bcuocj1buj5vog3u3s7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeuG1GIIIDlGWr5kVyDQmI1erEJD6wrUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392079781871-iar2unm6tbs1bcuocj1buj5vog3u3s7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

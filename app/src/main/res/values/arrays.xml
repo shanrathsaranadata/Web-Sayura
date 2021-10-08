@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="Login">
+        <item>Select Your Type</item>
+        <item>Admin</item>
+        <item>Lecturers</item>
+        <item>Students</item>
+    </string-array>
+    <string-array name="Batch">
+        <item>Select Your Batch</item>
+        <item>Batch01</item>
+        <item>Batch02</item>
+        <item>Batch03</item>
+        <item>Batch04</item>
+        <item>Batch05</item>
+        <item>Batch06</item>
+        <item>Batch07</item>
+        <item>Batch08</item>
+        <item>Batch09</item>
+        <item>Batch10</item>
+        <item>Batch11</item>
+        <item>Batch12</item>
+        <item>Batch13</item>
+        <item>Batch14</item>
+        <item>Batch15</item>
+    </string-array>
+    <string-array name="Users">
+        <item>Select Users Type</item>
+        <item>Admin</item>
+        <item>Lecturers</item>
+        <item>Students</item>
+    </string-array>
+    <string-array name="Courses">
+        <item>Select Courses Type</item>
+        <item>Arduino</item>
+        <item>Computer</item>
+        <item>PLC</item>
+        <item>Software</item>
+        <item>WEB</item>
+    </string-array>
+    <string-array name="Assignments">
+        <item>Select Assignments Type</item>
+        <item>Assignments01</item>
+        <item>Assignments02</item>
+        <item>Assignments03</item>
+        <item>Assignments04</item>
+        <item>Assignments05</item>
+    </string-array>
+</resources>

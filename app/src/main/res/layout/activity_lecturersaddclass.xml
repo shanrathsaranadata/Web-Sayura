@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lecturers.LecturersaddclassActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lectureraddclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Lecturer Add Class"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/class_titleet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lectureraddclass"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Class Title Here...."
+            />
+
+        <EditText
+            android:id="@+id/class_massageet"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/class_titleet"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Class Massage Here...."
+            />
+        <EditText
+            android:id="@+id/class_lecturerlinket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_massageet"
+            android:background="@drawable/wsets"
+            android:inputType="textWebEditText"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Zoom Link Here...."
+            />
+
+        <Spinner
+            android:id="@+id/batch_spinner"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_lecturerlinket"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/class_sendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/batch_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="send"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigationslecaddclz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/purple"
+            app:itemTextColor="@color/purple"
+            app:menu="@menu/bottom_nav_menu_users" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_floabtnlecaddclz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/purple"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="50dp"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

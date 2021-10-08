@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/courserlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/course_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_image"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"
+            android:layout_below="@+id/course_name"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/course_enrolled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_name"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_level"
+            android:layout_below="@+id/course_enrolled"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/course_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_enrolled"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fee"
+            android:layout_below="@+id/course_level"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/course_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_level"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_duration"
+            android:layout_below="@+id/course_fee"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/course_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_fee"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/course_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_duration"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            android:layout_below="@+id/course_duration"
+            android:contentDescription="TODO" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            android:layout_below="@+id/course_duration"
+            android:paddingLeft="30dp"
+            android:contentDescription="TODO" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            android:layout_below="@+id/course_duration"
+            android:paddingLeft="60dp"
+            android:contentDescription="TODO" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            android:layout_below="@+id/course_duration"
+            android:paddingLeft="90dp"
+            android:contentDescription="TODO" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            android:layout_below="@+id/course_duration"
+            android:paddingLeft="120dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/course_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_rating"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdmindashboardActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/admindashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Admin Dashboard"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/adminmaintendusers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admindashboard"
+            android:layout_centerHorizontal="true"
+            android:text="Maintain Users"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+        <Button
+            android:id="@+id/adminmaintendcourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminmaintendusers"
+            android:text="Maintain Courses"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/adminmaintendclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminmaintendcourses"
+            android:layout_centerHorizontal="true"
+            android:text="Maintain Class"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/adminmaintendprojects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminmaintendclass"
+            android:layout_centerHorizontal="true"
+            android:text="Maintain Projects"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+        <Button
+            android:id="@+id/adminforums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminmaintendprojects"
+            android:layout_centerHorizontal="true"
+            android:text="Discuss"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+        <Button
+            android:id="@+id/adminprojects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminforums"
+            android:text="Projects"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+        <Button
+            android:id="@+id/adminprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminprojects"
+            android:text="Profiles"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigationsadmin_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/purple"
+            app:itemTextColor="@color/purple"
+            app:menu="@menu/bottom_nav_menu_users" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_floabtnadmin_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/purple"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="50dp"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

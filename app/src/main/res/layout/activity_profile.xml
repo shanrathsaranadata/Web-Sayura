@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    tools:context=".ProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profilepicture"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/profile_imageusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi There Username!"
+            android:layout_below="@+id/profile_image"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/profile_imageedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editprofile"
+            android:layout_below="@+id/profile_imageusername"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_imageedit"
+            android:background="@drawable/nameet"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_name"
+            android:background="@drawable/emailet"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_email"
+            android:background="@drawable/addresset"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/profile_mobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_address"
+            android:background="@drawable/mobilenoet"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/profile_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_mobileno"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/savebtn"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        android:background="@android:color/transparent"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigationprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/purple"
+            app:itemTextColor="@color/purple"
+            app:menu="@menu/bottom_nav_menu_users" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_floabtnprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/purple"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="50dp"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

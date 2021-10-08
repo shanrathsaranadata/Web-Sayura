@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminaddnewusersActivity">
+
+    <TextView
+        android:id="@+id/admindashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Admin Add New User"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp">
+
+
+        <ImageView
+            android:id="@+id/websayuraicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/websayuraicon"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:id="@+id/addnewusers_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:textColor="@color/purple"
+            android:layout_centerHorizontal="true"
+            android:hint="Username"
+            android:layout_below="@+id/websayuraicon"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/addnewusers_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewusers_username"
+            android:background="@drawable/wsets"
+            android:layout_centerHorizontal="true"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/addnewusers_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewusers_email"
+            android:background="@drawable/wsets"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:hint="Name"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/addnewusers_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@+id/addnewusers_name"
+            android:background="@drawable/wsets"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:hint="Courses"
+            android:paddingLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/addnewusers_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/addnewusers_courses"
+            android:background="@drawable/wsets"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addnewusers_userbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewusers_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/wsbtns"
+            android:text="Add New Users"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Spinner
+            android:id="@+id/addnewusers_spinner"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewusers_userbtn"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigationsadmin_addnewuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/purple"
+            app:itemTextColor="@color/purple"
+            app:menu="@menu/bottom_nav_menu_users" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_floabtnadmin_addnewuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/purple"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="50dp"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lecturers.LecturersaddquizActivity">
+
+    <TextView
+        android:id="@+id/lectureraddquiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Lecturer Add Quiz"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/quiz01et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 01 here..."
+            />
+        <EditText
+            android:id="@+id/answer01et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz01et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 01 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz02et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer01et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 02 here..."
+            />
+        <EditText
+            android:id="@+id/answer02et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz02et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 02 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz03et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer02et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 03 here..."
+            />
+        <EditText
+            android:id="@+id/answer03et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz03et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 03 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz04et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer03et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 04 here..."
+            />
+        <EditText
+            android:id="@+id/answer04et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz04et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 04 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz05et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer04et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 05 here..."
+            />
+        <EditText
+            android:id="@+id/answer05et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz05et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 05 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz06et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/answer05et"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 06 here..."
+            />
+        <EditText
+            android:id="@+id/answer06et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz06et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 06 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz07et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer06et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 07 here..."
+            />
+        <EditText
+            android:id="@+id/answer07et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz07et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 07 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz08et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer07et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 08 here..."
+            />
+        <EditText
+            android:id="@+id/answer08et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz08et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 08 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz09et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer08et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 09 here..."
+            />
+        <EditText
+            android:id="@+id/answer09et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz09et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 09 here..."
+            />
+
+        <EditText
+            android:id="@+id/quiz10et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:layout_below="@+id/answer09et"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:hint="Type Quiz 10 here..."
+            />
+        <EditText
+            android:id="@+id/answer10et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wsets"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz10et"
+            android:paddingLeft="20dp"
+            android:hint="Type Answer 10 here..."
+            />
+
+        <Button
+            android:id="@+id/quiz_addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer10et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Add new Quiz"
+            android:background="@drawable/wsbtns"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigationslecaddquiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/purple"
+            app:itemTextColor="@color/purple"
+            app:menu="@menu/bottom_nav_menu_users" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_floabtnlecaddquiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:backgroundTint="@color/purple"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="50dp"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

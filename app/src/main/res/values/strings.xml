@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Web Sayura</string>
+    <string name="logout">Logout</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="courses">Courses</string>
+    <string name="menu">Menu</string>
+</resources>

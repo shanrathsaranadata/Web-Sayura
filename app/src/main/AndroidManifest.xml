@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.websayuraapp.websayura">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_websayura"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_websayura_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WebSayura">
+        <activity android:name=".Admin.AdminaddnewcommentsActivity"></activity>
+        <activity android:name=".Admin.AdminaddnewprojectsActivity" />
+        <activity android:name=".Admin.AdminaddnewvideosActivity" />
+        <activity android:name=".Students.StudentsjoinvideosActivity" />
+        <activity android:name=".Lecturers.LecturersaddquizActivity" />
+        <activity android:name=".VideosActivity" />
+        <activity android:name=".AssignmentsActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".Admin.AdminaddnewcoursesActivity" />
+        <activity android:name=".Admin.AdminaddnewusersActivity" />
+        <activity android:name=".Admin.AdminmaintainclassActivity" />
+        <activity android:name=".Admin.AdminmaintainprojectsActivity" />
+        <activity android:name=".Admin.AdminmaintaincoursesActivity" />
+        <activity android:name=".Admin.AdminmaintainusersActivity" />
+        <activity android:name=".DiscussionActivity" />
+        <activity android:name=".Students.StudentsjoinclassActivity" />
+        <activity android:name=".ProjectActivity" />
+        <activity android:name=".Lecturers.LecturersaddclassActivity" />
+        <activity android:name=".WebsayuraActivity" />
+        <activity android:name=".Students.StudentsdashboardActivity" />
+        <activity android:name=".Lecturers.LecturersdashboardActivity" />
+        <activity android:name=".Admin.AdmindashboardActivity" />
+        <activity android:name=".CoursedettailsActivity" />
+        <activity android:name=".AboutusActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".InboxActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".Students.StudentsHomeActivity" />
+        <activity android:name=".Lecturers.LecturersHomeActivity" />
+        <activity android:name=".Admin.AdminHomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MoreActivity" />
+        <activity android:name=".CoursesActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple" />
+
+        <service
+            android:name=".MessagingService.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
